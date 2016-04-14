@@ -4,7 +4,7 @@ name: Tejas Kulkarni # your name
 email: tejasdkulkarni@gmail.com # your email address
 description: >
     Artificial Intelligence @ MIT
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://mrkulk.github.io" # the base hostname & protocol for your site
 twitter_username: tejasdkulkarni # your Twitter username
 github_username: mrkulk # your Github username
