@@ -7,6 +7,7 @@ use_math: true
 > This is a running post aggregating some key open questions in Machine Intelligence. If you want to suggest an update, email me -- tejasdkulkarni@gmail.com   
 
 ## The nature and origin of goals and intrinsic motivation
+So
 $$
    |\psi_1\rangle = a|0\rangle + b|1\rangle
 $$
