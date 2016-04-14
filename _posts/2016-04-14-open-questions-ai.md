@@ -9,7 +9,7 @@ use_math: true
 ## The nature and origin of goals and intrinsic motivation
 Let us start with the notion of value functions $V(s)$, where $s$ denotes the state of the world. $V(s)$ caches the utility of $s$ towards achieving any desidred goal $g$. In typical reinforcement learning settings, the agents observes rewards and states from the environment and takes actions to estimate the value function:
 
-$$V(S) = \mathcal E(\sum_{t=0}^{\infinity} \gamma_t r_{t+1} | s, \pi)$$
+$$V(S) = \mathbb E(\sum_{t=0}^{\inf} \gamma_t r_{t+1} | s, \pi)$$
 
 <div class="divider"></div>
 
