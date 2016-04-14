@@ -7,6 +7,7 @@ updated: 2016-04-14 04:04
 
 ## The nature and origin of goals and intrinsic motivation
 $$x=1$$
+c=2
 <div class="divider"></div>
 
 ## Agent-Environment Boundary
