@@ -2,16 +2,21 @@
 layout: default
 ---
 
-<style>
+<section>
+	<ul>
 
-.index-content {
-	margin-top: 30%;
-	margin-bottom: 30%;
-	font-size: 18px;
-}
+		{% for post in site.posts %}
 
-</style>
+		<li>
+			<div class="post-date">
+				<span>{{ post.date | date: "%b %d, %Y" }}</span>
+			</div>
+			<div class="title">
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</div>
+		</li>
 
-<center>
-	<p class="index-content">Hello World</p>
-</center>
+		{% endfor %}
+
+	</ul>
+</section>

@@ -1,34 +1,31 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
-<html>
-  <head>
-      
-  {% include head.html %}
+<html lang="en">
 
-  {% if site.google-analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
+	<head>
+		{% include head.html %}
+	</head>
 
-  {% if page.url == "/404.html" %}
-  <meta http-equiv="refresh" content="10; url={{ site.baseurl }}">
-  {% endif %}
+	<body>
 
-  </head>
+		{% include header.html %}
 
-  <body>
+		<main>
+			{{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
+		</main>
 
-  {% include header.html %}
+		{% if page.path contains '_posts' %}
 
-  <div class="wrapper">
-        {{ content }}
-  </div>
+			{% if content contains 'reversefootnote' %}
+				<aside class="note"></aside>
+				<script async src="{{site.baseurl}}/assets/footnotes.js"></script>
+			{% endif %}
 
-</body>
+		{% endif %}
 
-<foot>
-
-    {% include footer.html %}
-    {% include foot.html %}
-
-</foot>
+	</body>
 
 </html>

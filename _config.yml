@@ -1,19 +1,55 @@
-# Site settings
-title: Tejas Kulkarni's Blog
-name: Tejas Kulkarni # your name
-email: tejasdkulkarni@gmail.com # your email address
-description: >
-    Artificial Intelligence @ MIT
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://mrkulk.github.io" # the base hostname & protocol for your site
-twitter_username: tejasdkulkarni # your Twitter username
-github_username: mrkulk # your Github username
-disqus_username: tejasdkulkarni # your disqus username
+# Site Info
+title:              "Tejas Kulkarni's Blog"
+description:        "Artificial Intelligence @ MIT"
+google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Put your Google Verification here
+google_analytics:   UA-XXXXXXX-X # Put your Google Analytics code
 
-google-analytics:  # add it if you have one
+# Author Info
+author_name:        "Tejas Kulkarni"
+author_email:       tejasdkulkarni@gmail.com
+author_gravatar:    66394453d5122a7bab5d70b884e407e9 # Gravatar md5 hash
+twitter_username:   tejasdkulkarni
 
-skillstree: true # turn on or off the skills tree in about page
+# Site Settings
+baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
+permalink:          /notes/:title # Post permalink
+timezone:           America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Build settings
-permalink: none
-markdown: kramdown
+# Site Build
+highlighter:        pygments
+#markdown:           redcarpet
+#redcarpet:
+#    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
+
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+gems:
+  - jekyll-sitemap
+
+compress_html:
+    clippings:      all
+    ingore:
+        envs:       [ "test" ]
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
