@@ -6,7 +6,7 @@ updated: 2016-04-14 04:04
 > This is a running post aggregating some key open questions in Machine Intelligence. If you want to suggest an update, email me -- tejasdkulkarni@gmail.com   
 
 ## The nature and origin of goals and intrinsic motivation
-random variables $X\_1, X\_2, X\_3$ from
+random variables $$X_1, X_2, X_3$$ from
 
 <div class="divider"></div>
 
