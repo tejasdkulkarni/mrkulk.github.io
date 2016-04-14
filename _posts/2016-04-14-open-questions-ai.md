@@ -7,15 +7,15 @@ use_math: true
 > This is a running post aggregating some key open questions in Machine Intelligence. If you want to suggest an update, email me -- tejasdkulkarni@gmail.com   
 
 ## The nature and origin of goals and intrinsic motivation
-So
-$$
-   |\psi_1\rangle = a|0\rangle + b|1\rangle
-$$
 
+TODO
 <div class="divider"></div>
 
 ## Agent-Environment Boundary
 In most of reinforcement learning literature, the agent is separate from the environment. This is not the case in real-world scenario. How do we formalize and deal with this? What are the consequences for main stream AI?
+$$
+   |\psi_1\rangle = a|0\rangle + b|1\rangle
+$$
 <div class="divider"></div>
 
 ## Control over the Reward Channel
