@@ -12,7 +12,7 @@ updated: 2016-04-14 04:04
 In most of reinforcement learning literature, the agent is separate from the environment. This is not the case in real-world scenario. How do we formalize and deal with this? What are the consequences for main stream AI?
 <div class="divider"></div>
 
-## Control over Reward Channel
+## Control over the Reward Channel
 How do we ensure that an AI agent does not take control of it’s own reward channel?
 <div class="divider"></div>
 
