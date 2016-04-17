@@ -17,7 +17,7 @@ Value functions are more important than rewards. Rewards are observed only in ce
 
 The most basic form of intrinsic motivation could be stated as -- "learning feels good". But can we do better? I have listed some landmark papers on this topic:
 
-<!-- 1. _Intrinsically Motivated Reinforcement Learning: An Evolutionary Perspective_ by Singh et al.
+1. _Intrinsically Motivated Reinforcement Learning: An Evolutionary Perspective_ by Singh et al.
 * [Paper Link](http://web.eecs.umich.edu/~baveja/Papers/IMRLIEEETAMDFinal.pdf)
 * This paper introduces the idea of optimal reward functions. Optimal reward functions are internal to the agent and are evolved over multiple generations of the agent. The environment induces a fitness function, which does natural selection of this reward function. The agent learns a policy under this reward function and the process continues. The deep insight about this paper is the nature and origin of intrinsically motivated behavior like curiosity or self-play. Some reward functions might encourage the agent to behave in ways that does not affect the fitness value immediately but could potentially have a big effect in the future. So this paper basically provides an emergent account of curiosity. Humans engage in curiosity driven behavior at an early stage. They indulge in behaviors such as block stacking which dosen't have immediate utility but are crucial to build up motor skills for the future. 
 
@@ -25,7 +25,7 @@ The most basic form of intrinsic motivation could be stated as -- "learning feel
 * [Paper Link](http://people.idsia.ch/~juergen/ieeecreative.pdf)
 * Schmidhuber introduced a task-agnostic notion of intrinsic motivation based purely on learning. Along with the typical RL machinery, assume the agent also learns a predictive world model. Given a history of states, the model should be able to predict the future. Now the intrinsic reward for current iteration $t$ can be defined as the delta between the model's predictive quality on the entire history $s_{1, t+1}$ versus the quality on $s_{1,t}$. The reinforecment learning machinery can then use this intrinsic reward along with the reward provided by the environment to find an optimal policy. 
 
- -->
+
 <div class="divider"></div>
 
 ## Control over the Reward Channel
