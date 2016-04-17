@@ -13,9 +13,7 @@ $$V(S) = \mathbb E(\sum_{t=0}^\infty \gamma_t r_{t+1} | s, \pi)$$
 
 Here $\gamma$ denotes a discount factor which ensures a convergent series when the episode length $t$ is arbitrary. $\pi$ denotes the goal-directed policy that maps states to actions. 
 
-Value functions are more important than rewards. Rewards are observed only in certain states. Value functions provide an estimate of expected future rewards from an aribtrary state in the environment, given the agent sufficiently explores the environment. This feature is crucial for generalization. But what happens when the agent cannot sufficiently explore high-dimensional state spaces or if the reward is too sparse? In such typical situations, the agent could benefit from being intrinsically motivated to come up with 'useful' goals to solve. 
-
-The most basic form of intrinsic motivation could be stated as -- "learning feels good". But can we do better? I have listed some landmark papers on this topic:
+Value functions are more important than rewards. Rewards are observed only in certain states. Value functions provide an estimate of expected future rewards from an aribtrary state in the environment, given the agent sufficiently explores the environment. This feature is crucial for generalization. But what happens when the agent cannot sufficiently explore high-dimensional state spaces or if the reward is too sparse? In such typical situations, the agent could benefit from being intrinsically motivated to come up with 'useful' goals to solve. The most basic form of intrinsic motivation could be stated as -- "learning feels good". Can we say something more tangible? I have listed some landmark papers on this topic:
 
 1. _Intrinsically Motivated Reinforcement Learning: An Evolutionary Perspective_ by Singh et al.
 * [Paper Link](http://web.eecs.umich.edu/~baveja/Papers/IMRLIEEETAMDFinal.pdf)
