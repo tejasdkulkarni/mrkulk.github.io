@@ -18,8 +18,9 @@ Value functions are more important than rewards. Rewards are observed only in ce
 The most basic form of intrinsic motivation could be stated as -- "learning feels good". But can we do better? I have listed some landmark papers on this topic:
 
 1. _Intrinsically Motivated Reinforcement Learning: An Evolutionary Perspective_ by Singh et al.
-	* fdfdd
-	* dfdf
+
+fdfdd
+dfdf
 2. df
 
 <div class="divider"></div>
