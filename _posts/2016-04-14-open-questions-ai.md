@@ -15,10 +15,9 @@ Here $\gamma$ denotes a discount factor which ensures a convergent series when t
 
 Value functions are more important than rewards. Rewards are observed only in certain states. Value functions provide an estimate of expected future rewards from an aribtrary state in the environment, given the agent sufficiently explores the environment. This feature is crucial for generalization. But what happens when the agent cannot sufficiently explore high-dimensional state spaces or if the reward is too sparse? In such typical situations, the agent could benefit from being intrinsically motivated to come up with 'useful' goals to solve. 
 
-<div class="divider"></div>
+The most basic form of intrinsic motivation could be stated as -- "learning feels good". But can we do better? I have listed some landmark papers on this topic:
+#_Intrinsically Motivated Reinforcement Learning: An Evolutionary Perspective_ by Singh et al.#
 
-## Agent-Environment Boundary
-In most of reinforcement learning literature, the agent is separate from the environment. This is not the case in real-world scenario. How do we formalize and deal with this? What are the consequences for main stream AI?
 
 <div class="divider"></div>
 
