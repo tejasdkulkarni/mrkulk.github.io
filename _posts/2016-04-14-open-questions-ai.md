@@ -41,6 +41,7 @@ This suggests an evolutionary account of why the brain creates sub-modules for d
 
 <div class="divider"></div>
 
+{% if page.comments %}
 <div id="disqus_thread"></div>
 <script>
 /**
@@ -61,4 +62,4 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
+{% endif %}
