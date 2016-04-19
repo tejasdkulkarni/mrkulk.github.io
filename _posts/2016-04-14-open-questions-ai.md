@@ -21,33 +21,24 @@ Value functions are more important than rewards. Rewards are observed only in ce
 
 2. _Formal theory of creativity, fun, and intrinsic motivation_ by Schmidhuber et al.
 * [Paper Link](http://people.idsia.ch/~juergen/ieeecreative.pdf)
-* Schmidhuber introduced a task-agnostic notion of intrinsic motivation based purely on learning. Along with the typical RL machinery, assume the agent also learns a predictive world model. Given a history of states, the model should be able to predict the future. Now the intrinsic reward for current iteration $t$ can be defined as the delta between the model's predictive quality on the entire history $s_{1, t+1}$ versus the quality on $s_{1,t}$. The reinforecment learning machinery can then use this intrinsic reward along with the reward provided by the environment to find an optimal policy. 
+* Schmidhuber introduced a task-agnostic notion of intrinsic motivation based purely on learning. Along with the typical RL machinery, assume that the agent also learns a predictive world model. Given a history of states, the model should be able to predict the future. Now the intrinsic reward for current iteration $t$ can be defined as the delta between the model's predictive quality on the entire history $s_{1, t+1}$ versus the quality on $s_{1,t}$. The reinforecment learning machinery can then use this intrinsic reward along with the reward provided by the environment to find an optimal policy. 
 
 
 <div class="divider"></div>
 
-## Control over the Reward Channel
-How do we ensure that an AI agent does not take control of it’s own reward channel?
+## Control over the Reward Channel in Reinforcement Learning and Value Alignment
+How do we ensure that an AI agent does not take control of it’s own reward channel? In a typical reinforcement learning setup, the agent tries to maximize expected future rewards $\mathbb E(\sum_{t=0}^\infty \gamma_t r_{t+1} | s, \pi)$ to find optimal policies. In order to ensure that the agent continues to maximize it's reward channel, it can alter the it's environment in arbitrary ways. While doing so, the agent can disregard any human goals along it's path. How do we stop this? Nobody really knows but people have tried to come up with several arguments. 
+
+The most reasonable one I have come across is from [Daniel Dewey](https://intelligence.org/files/LearningValue.pdf). He argues that instead of expected future reward maximization, the agent should instead optimize expected utility over a pool of possible utilities. These utility functions could be designed so that the agent's values are consistent with human values. Since future trajectories over time are scored under a defined set of utility functions, even if the agent modifies it's _future_ utility functions, this improvement may not yield improvements according to the originally defined utility functions. And therefore this self-modification of future utilities will not be chosen by the agent. 
+
 <div class="divider"></div>
 
-## Logical Uncertainty
+## Efficiently solving Human Goals
+To build AI to solve human-like goals \(perception, motor-control, etc.\), how should we think about intermediate representations for efficient goal-directed behavior? Evolution has spent billions of years tuning biological agents to adapt in stochastic environments. A compact way to transfer information between agents is to encode useful goals into the genome, so that the agent can learn a policy to accomplish such goals during its lifetime. The niche of the universe we found ourselves in dictates the regularities in our environment. Due to this regularity, it is concievable for evolution to preserve basic goals such as discovering visual concepts, which may turn out to be useful to learn many higher order behaviors. This is evident in baby Gazelle which learns to walk and do basic navigation within 10 minutes from birth -- 
+
+<iframe width="420" height="315" src="https://www.youtube.com/watch?v=iprhW773VyI" frameborder="0" allowfullscreen></iframe>
+
+This suggests an evolutionary account of why the brain creates sub-modules for different computations such as face processing. Early recognition of faces is critical for social intelligence and could also be leveraged to bootstrap learning about the visual world itself. What are the other mid-level representations that evolution could have preserved, that we as humans leverage in order to solve all the goals in our environmental niche? I believe understanding and building such representations will enable us to create data-efficient agents for solving many human goals.  
+
 <div class="divider"></div>
-
-## Value Function Alignment
-How do we practically align an AI’s value function with ours over long periods of time?
-<div class="divider"></div>
-
-## Human Goals
-To build AI to solve human-like goals (perception, motor-control, etc.), how should we think about intermediate representations for efficient goal-directed behavior?
-<div class="divider"></div>
-
-## What are the physical bounds on intelligence?
-<div class="divider"></div>
-
-## Grounding
-Deconstructing or grounding ‘thought’ and ‘knowledge’ to experiences
-<div class="divider"></div>
-
-
-
 
