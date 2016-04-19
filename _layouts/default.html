@@ -16,8 +16,9 @@ layout: compress
 
 		<main>
 			{{ content | replace: '&#8617;', '&#8617;&#xfe0e;' }}
+			{% include comments.html %}
 		</main>
-		{% include comments.html %}
+		
 		{% if page.path contains '_posts' %}
 
 			{% if content contains 'reversefootnote' %}
