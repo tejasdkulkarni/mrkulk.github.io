@@ -41,3 +41,7 @@ To build AI to solve human-like goals such as navigation, scene understanding, m
 This suggests an evolutionary account of why the brain creates sub-modules for different computations such as face processing. Early recognition of faces is critical for social intelligence and could also be leveraged to bootstrap learning about the visual world itself. What are the other mid-level representations that evolution could have preserved, that we as humans leverage in order to solve all the goals in our environmental niche? I believe understanding and building such representations will enable us to create data-efficient agents for solving many human goals.  
 
 <div class="divider"></div>
+
+
+Tejas Kulkarni
+(Cambridge, USA)
