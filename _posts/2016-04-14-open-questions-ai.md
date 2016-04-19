@@ -35,7 +35,7 @@ The most reasonable one I have come across is from [Daniel Dewey](https://intell
 <div class="divider"></div>
 
 ## Efficiently solving Human Goals
-To build AI to solve human-like goals \(perception, motor-control, etc.\), how should we think about intermediate representations for efficient goal-directed behavior? Evolution has spent billions of years tuning biological agents to adapt in stochastic environments. A compact way to transfer information between agents is to encode useful goals into the genome, so that the agent can learn a policy to accomplish such goals during its lifetime. The niche of the universe we found ourselves in dictates the regularities in our environment. Due to this regularity, it is concievable for evolution to preserve basic goals such as discovering visual concepts, which may turn out to be useful to learn many higher order behaviors. [This is evident in baby Gazelle which learns to walk and do basic navigation within 10 minutes from birth](https://www.youtube.com/watch?v=iprhW773VyI).
+To build AI to solve human-like goals (perception, motor-control, etc.), how should we think about intermediate representations for efficient goal-directed behavior? Evolution has spent billions of years tuning biological agents to adapt in stochastic environments. A compact way to transfer information between agents is to encode useful goals into the genome, so that the agent can learn a policy to accomplish such goals during its lifetime. The niche of the universe we found ourselves in dictates the regularities in our environment. Due to this regularity, it is concievable for evolution to preserve basic goals such as discovering visual concepts, which may turn out to be useful to learn many higher order behaviors. [This is evident in baby Gazelle which learns to walk and do basic navigation within 10 minutes from birth](https://www.youtube.com/watch?v=iprhW773VyI).
 
 This suggests an evolutionary account of why the brain creates sub-modules for different computations such as face processing. Early recognition of faces is critical for social intelligence and could also be leveraged to bootstrap learning about the visual world itself. What are the other mid-level representations that evolution could have preserved, that we as humans leverage in order to solve all the goals in our environmental niche? I believe understanding and building such representations will enable us to create data-efficient agents for solving many human goals.  
 
@@ -48,12 +48,12 @@ This suggests an evolutionary account of why the brain creates sub-modules for d
 * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
 */
-/*
+
 var disqus_config = function () {
-this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "mrkulk.github.io"; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = {{ page.url }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
-*/
+
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
 s.src = '//tejasdkulkarni.disqus.com/embed.js';
