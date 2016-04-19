@@ -11,9 +11,7 @@ use_math: true
 ## The nature and origin of goals and intrinsic motivation
 Let us start with the notion of value functions $V(s)$, where $s$ denotes the state of the world. $V(s)$ caches the utility of $s$ towards achieving any desidred goal $g$. In typical reinforcement learning settings, the agent observes rewards and states from the environment and takes actions to estimate the value function:
 
-$$V(S)=E ( \sum_{t=0}^\infty $$
-
-<!--$$V(S) = E(\sum_{t=0}^\infty \gamma_t r_{t+1} | s, \pi)$$-->
+$$V(S)=E ( \sum_{t=0}^\infty \gamma_t r_{t+1} | s, \pi) $$
 
 Here $\gamma$ denotes a discount factor which ensures a convergent series when the episode length $t$ is arbitrary. $\pi$ denotes the goal-directed policy that maps states to actions. 
 
@@ -31,7 +29,7 @@ Value functions are more important than rewards. Rewards are observed only in ce
 <div class="divider"></div>
 
 ## Control over the Reward Channel in Reinforcement Learning and Value Alignment
-How do we ensure that an AI agent does not take control of it’s own reward channel? In a typical reinforcement learning setup, the agent tries to maximize expected future rewards $ E(\sum_{t=0}^\infty \gamma_t r_{t+1} | s, \pi)$ to find optimal policies. In order to ensure that the agent continues to maximize it's reward channel, it can alter the it's environment in arbitrary ways. While doing so, the agent can disregard any human goals along it's path. How do we stop this? Nobody really knows but people have tried to come up with several arguments. 
+How do we ensure that an AI agent does not take control of it’s own reward channel? In a typical reinforcement learning setup, the agent tries to maximize expected future rewards $ E ( \sum_{t=0}^\infty \gamma_t r_{t+1} | s, \pi ) $ to find optimal policies. In order to ensure that the agent continues to maximize it's reward channel, it can alter the it's environment in arbitrary ways. While doing so, the agent can disregard any human goals along it's path. How do we stop this? Nobody really knows but people have tried to come up with several arguments. 
 
 The most reasonable one I have come across is from [Daniel Dewey](https://intelligence.org/files/LearningValue.pdf). He argues that instead of expected future reward maximization, the agent should instead optimize expected utility over a pool of possible utilities. These utility functions could be designed so that the agent's values are consistent with human values. Since future trajectories over time are scored under a defined set of utility functions, even if the agent modifies it's _future_ utility functions, this improvement may not yield improvements according to the originally defined utility functions. And therefore this self-modification of future utilities will not be chosen by the agent. 
 
