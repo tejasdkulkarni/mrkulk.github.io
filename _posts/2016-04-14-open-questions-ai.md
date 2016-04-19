@@ -3,6 +3,7 @@ title: Open Questions in Machine Intelligence
 updated: 2016-04-14 04:04
 use_math: true
 comments: true
+disqus: yes
 ---
 
 > This is a running post aggregating some key open questions in Machine Intelligence. If you want to suggest an update, email me -- tejasdkulkarni@gmail.com   
@@ -50,8 +51,8 @@ This suggests an evolutionary account of why the brain creates sub-modules for d
 */
 
 var disqus_config = function () {
-this.page.url = "mrkulk.github.io"; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = {{ page.url }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "{{ page.id }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
