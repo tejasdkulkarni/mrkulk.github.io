@@ -11,7 +11,7 @@ use_math: true
 ## The nature and origin of goals and intrinsic motivation
 Let us start with the notion of value functions $V(s)$, where $s$ denotes the state of the world. $V(s)$ caches the utility of $s$ towards achieving any desidred goal $g$. In typical reinforcement learning settings, the agent observes rewards and states from the environment and takes actions to estimate the value function:
 
-$$V(S)=E ( \sum_{t'=t}^\infty \gamma^{t'-t} R_{t'} \mid s, \pi ) $$
+$$V(S)=E ( \sum_{t'=t}^\infty \gamma^{t'-t} r\_{t'} \mid s, \pi ) $$
 
 Here $\gamma$ denotes a discount factor which ensures a convergent series when the episode length $t$ is arbitrary. $\pi$ denotes the goal-directed policy that maps states to actions. 
 
@@ -23,14 +23,13 @@ Value functions are more important than rewards. Rewards are observed only in ce
 
 2. _Formal theory of creativity, fun, and intrinsic motivation_ by Schmidhuber et al.
 * [Paper Link](http://people.idsia.ch/~juergen/ieeecreative.pdf)
-* Schmidhuber introduced a task-agnostic notion of intrinsic motivation based purely on learning. Along with the typical RL machinery, assume that the agent also learns a predictive world model. Given a history of states, the model should be able to predict the future. Now the intrinsic reward for current iteration $t$ can be defined as the delta between the model's predictive quality on the entire history $s_{1, t+1}$ versus the quality on $s_{1,t}$. The reinforecment learning machinery can then use this intrinsic reward along with the reward provided by the environment to find an optimal policy. 
+* Schmidhuber introduced a task-agnostic notion of intrinsic motivation based purely on learning. Along with the typical RL machinery, assume that the agent also learns a predictive world model. Given a history of states, the model should be able to predict the future. Now the intrinsic reward for current iteration $t$ can be defined as the delta between the model's predictive quality on the entire history $s\_{1, t+1}$ versus the quality on $s\_{1,t}$. The reinforecment learning machinery can then use this intrinsic reward along with the reward provided by the environment to find an optimal policy. 
 
 
 <div class="divider"></div>
 
 ## Control over the Reward Channel in Reinforcement Learning and Value Alignment
-How do we ensure that an AI agent does not take control of it’s own reward channel? In a typical reinforcement learning setup, the agent tries to maximize expected future rewards 
-<!--$ E ( \sum_{t=0}^\infty \gamma_{t} r_{t+1} | s, \pi ) $ to find optimal policies. In order to ensure that the agent continues to maximize it's reward channel, it can alter the it's environment in arbitrary ways. While doing so, the agent can disregard any human goals along it's path. How do we stop this? Nobody really knows but people have tried to come up with several arguments. -->
+How do we ensure that an AI agent does not take control of it’s own reward channel? In a typical reinforcement learning setup, the agent tries to maximize expected future rewards to find optimal policies. In order to ensure that the agent continues to maximize it's reward channel, it can alter the it's environment in arbitrary ways. While doing so, the agent can disregard any human goals along it's path. How do we stop this? Nobody really knows but people have tried to come up with several arguments. -->
 
 The most reasonable one I have come across is from [Daniel Dewey](https://intelligence.org/files/LearningValue.pdf). He argues that instead of expected future reward maximization, the agent should instead optimize expected utility over a pool of possible utilities. These utility functions could be designed so that the agent's values are consistent with human values. Since future trajectories over time are scored under a defined set of utility functions, even if the agent modifies it's _future_ utility functions, this improvement may not yield improvements according to the originally defined utility functions. And therefore this self-modification of future utilities will not be chosen by the agent. 
 
