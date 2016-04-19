@@ -1,7 +1,7 @@
 ---
 title: Open Questions in Machine Intelligence
 updated: 2016-04-14 04:04
-layout: default
+layout: post
 comments: true
 use_math: true
 ---
