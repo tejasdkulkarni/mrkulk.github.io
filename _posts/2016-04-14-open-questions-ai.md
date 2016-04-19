@@ -41,3 +41,4 @@ This suggests an evolutionary account of why the brain creates sub-modules for d
 
 <div class="divider"></div>
 
+{% include disqus_comments.html %}
