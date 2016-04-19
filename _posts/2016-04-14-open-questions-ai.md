@@ -11,7 +11,8 @@ use_math: true
 ## The nature and origin of goals and intrinsic motivation
 Let us start with the notion of value functions $V(s)$, where $s$ denotes the state of the world. $V(s)$ caches the utility of $s$ towards achieving any desidred goal $g$. In typical reinforcement learning settings, the agent observes rewards and states from the environment and takes actions to estimate the value function:
 
-$$V(S)=\sum$$
+$$V(S)=E ( \sum_{t=0}$$
+
 <!--$$V(S) = E(\sum_{t=0}^\infty \gamma_t r_{t+1} | s, \pi)$$-->
 
 Here $\gamma$ denotes a discount factor which ensures a convergent series when the episode length $t$ is arbitrary. $\pi$ denotes the goal-directed policy that maps states to actions. 
