@@ -1,8 +1,9 @@
 ---
 title: Open Questions in Machine Intelligence
 updated: 2016-04-14 04:04
-use_math: true
+layout: default
 comments: true
+use_math: true
 ---
 
 > This is a running post aggregating some key open questions in Machine Intelligence. If you want to suggest an update, email me -- tejasdkulkarni@gmail.com   
