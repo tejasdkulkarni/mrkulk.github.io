@@ -51,8 +51,8 @@ This suggests an evolutionary account of why the brain creates sub-modules for d
 */
 
 var disqus_config = function () {
-this.page.url = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "{{ page.id }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "http://mrkulk.github.io/notes/open-questions-ai"; // Replace PAGE_URL with your page's canonical URL variable
+// this.page.identifier = "{{ page.id }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
