@@ -6,7 +6,7 @@ comments: true
 use_math: true
 ---
 
-> This is a running post aggregating some key open questions in Machine Intelligence. If you want to suggest an update, email me -- tejasdkulkarni@gmail.com   
+> This is a running post aggregating some key open questions in Machine Intelligence. If you want to suggest an update, comment below.  
 
 ## The nature and origin of goals and intrinsic motivation
 Let us start with the notion of value functions $V(s)$, where $s$ denotes the state of the world. $V(s)$ caches the utility of $s$ towards achieving any desidred goal $g$. In typical reinforcement learning settings, the agent observes rewards and states from the environment and takes actions to estimate the value function:
