@@ -1,8 +1,6 @@
 # Site Info
 title:              "Tejas Kulkarni's Blog"
 description:        "Artificial Intelligence @ MIT"
-google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Put your Google Verification here
-google_analytics:   UA-XXXXXXX-X # Put your Google Analytics code
 
 # Author Info
 author_name:        "Tejas Kulkarni"
@@ -20,7 +18,7 @@ highlighter:        pygments
 #markdown:           redcarpet
 #redcarpet:
 #    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
-markdown:           maruku
+markdown:           redcarpet
 kramdown:
     input:          GFM
 sass:
