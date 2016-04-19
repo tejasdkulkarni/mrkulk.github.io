@@ -13,7 +13,7 @@ Let us start with the notion of value functions $V(s)$, where $s$ denotes the st
 
 <!--$$V(S)=E ( \sum_{t=0}^\infty r_{t+1} | s, \pi ) $$-->
 
-$$V(S)=E ( \sum_{t=0}^\infty , s, \pi ) $$
+$$V(S)=E ( \sum_{t=0}^\infty , r_{t+1} \mid s, \pi ) $$
 
 Here $\gamma$ denotes a discount factor which ensures a convergent series when the episode length $t$ is arbitrary. $\pi$ denotes the goal-directed policy that maps states to actions. 
 
