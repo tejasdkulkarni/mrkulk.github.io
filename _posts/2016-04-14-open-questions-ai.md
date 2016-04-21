@@ -1,5 +1,5 @@
 ---
-title: Open Questions in Machine Intelligence
+title: Open questions in machine intelligence
 updated: 2016-04-14 04:04
 layout: post
 comments: true
