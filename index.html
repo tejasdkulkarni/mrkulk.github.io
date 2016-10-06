@@ -3,6 +3,22 @@ layout: post
 title: Tejas Kulkarni
 ---
 
-I want to build and understand human and artificial intelligence. I got my PhD from the Brain and Cognitive Sciences department at MIT. I am currently a Research Scientist at DeepMind.
+<section>
+	<ul>
 
-[Github](https://github.com/mrkulk) | [Google Profile](https://scholar.google.com/citations?user=rrPyvsgAAAAJ&hl=en&oi=ao) | [Twitter](https://twitter.com/tejasdkulkarni)
+		{% for post in site.posts %}
+
+		<li>
+			<div class="post-date">
+				<span>{{ post.date | date: "%b %d, %Y" }}</span>
+			</div>
+			<div class="title">
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</div>
+		</li>
+
+		{% endfor %}
+
+	</ul>
+</section>
+
