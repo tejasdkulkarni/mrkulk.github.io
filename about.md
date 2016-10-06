@@ -1,12 +1,23 @@
 ---
-layout: page
-title: About
+layout: default
+title: Thoughts
 ---
 
-I am a PhD candidate at MIT. I want to build and understand intelligence. 
+<section>
+	<ul>
 
-- [Personal Website](http://tejask.com/)
-- Contact: tejasdkulkarni@gmail.com
-- [Twitter](https://twitter.com/tejasdkulkarni)
-- [Github](https://github.com/mrkulk)
+		{% for post in site.posts %}
 
+		<li>
+			<div class="post-date">
+				<span>{{ post.date | date: "%b %d, %Y" }}</span>
+			</div>
+			<div class="title">
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</div>
+		</li>
+
+		{% endfor %}
+
+	</ul>
+</section>
